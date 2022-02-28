@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Shopping Card</title>
 </head>
 <body>
     <header>
@@ -45,7 +45,7 @@
             <a href="#"><img src="./images/avatar.png" alt="avatar"></a>
         </div>
     </nav>
-    <section class="register-section">
+    <section class="shopping-card-section">
         <nav>
             <div class="breadcrumbs">
                 <ul>
@@ -54,38 +54,143 @@
                 </ul>
             </div>
         </nav>
-        <h1>Customer Login</h1>
-        <div class="customer-login-block">
-            <div class="customer-login-form">
-                <span>Registered Customers</span>
-                <span>If you have an account, sign in with your email address.</span>
+        <h1>Shopping Cart</h1>
+        <div class="shopping-card-block">
+            <div class="items-list">
+                <div>
+                    <table>
+                        <tr>
+                            <td>Item</td>
+                            <td>Price</td>
+                            <td>Qty</td>
+                            <td>Subtotal</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/card1.png" alt="">
+                            </td>
+                            <td>
+                                <p>
+                                    MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 
+                                    SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming 
+                                    Keyboard and Mouse 3 Years Warranty
+                                </p>
+                            </td>
+                            <td>
+                                <span>$4,349.00</span>
+                            </td>
+                            <td>
+                                <input type="number">
+                            </td>
+                            <td>
+                                <span>$13,047.00</span>
+                                <div>
+                                    <img src="./images/card-delete-item.svg" alt="">                                    
+                                    <img src="./images/card-edit-item.svg" alt="">                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="./images/card2.png" alt="">
+                            </td>
+                            <td>
+                                <p>
+                                    MSI MEG Trident X 10SD-1012AU Intel i7 10700K, 2070 
+                                    SUPER, 32GB RAM, 1TB SSD, Windows 10 Home, Gaming 
+                                    Keyboard and Mouse 3 Years Warranty
+                                </p>
+                            </td>
+                            <td>
+                                <span>$4,349.00</span>
+                            </td>
+                            <td>
+                                <input type="number">
+                            </td>
+                            <td>
+                                <span>$13,047.00</span>
+                                <div>
+                                    <img src="./images/card-delete-item.svg" alt="">                                    
+                                    <img src="./images/card-edit-item.svg" alt="">                                    
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-buttons">
+                    <button>Continue Shopping</button>
+                    <button>Clear Shopping Cart</button>
+                    <button>Update Shopping Cart</button>
+                </div>
+            </div>
+            <div class="card-summary">
                 <form action="#">
-                    <div class="contact-us-form-item">
-                        <label for="email">Email <span>*</span></label>
-                        <input type="email" id="email" required value="Your Name">
+                    <a href="#">Estimate Shipping and Tax</a>
+                    <div class="estimated-inner">
+                        <p>Enter your destination to get a shipping estimate.</p>                            
+                            <label for="country">Country</label>
+                            <select name="country" id="country">
+                                <option value="1">Australia</option>
+                            </select>
+                            <label for="state">State/Province</label>
+                            <input type="text" id="state">
+                            <label for="code">Zip/Postal Code</label>
+                            <input type="text" id="code">
+                            <label for="rate">Standard Rate</label>
+                            <input type="radio" id="rate"><span>Price may vary depending on the item/destination. Shop Staff will contact you. $21.00</span>
+                            <label for="store">Pickup from store</label>
+                            <input type="radio" id="store"><span>1234 Street Adress City Address, 1234 $0.00</span>                            
                     </div>
-                    <div class="contact-us-form-item">
-                        <label for="phone">Your Phone Number</label>
-                        <input type="phone" id="phone" value="Your Phone Number">
+                    <a href="#">Apply Discount Code</a>
+                    <div class="discount">
+                        <label for="discount-code">Enter discount code</label>
+                        <input type="text" id="discount-code" placeholder="Enter Discount code">
+                        <button>Apply Discount</button>
+                    </div>
+                    <div class="summary-info">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>$13,047.00</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Shipping
+                                    <p>
+                                        (Standard Rate - Price may vary depending on the 
+                                        item/destination. Shop Staff will contact you.)
+                                    </p>
+                                </td>
+                                <td>$21.00</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>$1.91</td>
+                            </tr>
+                            <tr>
+                                <td>GST (10%)</td>
+                                <td>$1.91</td>
+                            </tr>
+                            <tr>
+                                <td>Order Total</td>
+                                <td>$13,068.00</td>
+                            </tr>
+                        </table>
+                        <button type="submit">Proceed to Checkout</button>
+                        <button>
+                            Check out with
+                            <img src="./images/paypal-logo2.png" alt="">
+                        </button>
+                        <button>
+                            Check Out with Multiple Addresses
+                        </button>
                     </div>
                     <div>
-                        <button type="submit">Sign In</button>
-                        <a href="#">Forgot Your Password?</a>
+                        <img src="./images/zip-logo-card.png" alt="">
+                        <span>own it now, up to 6 months interest free learn more</span>
                     </div>
                 </form>
             </div>
-            <div class="customer-login-form">
-                <span>New Customer?</span>
-                <span>Creating an account has many benefits:</span>
-                <p>
-                    <ul>
-                        <li>Check out faster</li>
-                        <li>Keep more than one address</li>
-                        <li>Track orders and more</li>
-                    </ul>
-                </p>
-            </div>
-            <button>Create An Account</button>
         </div>
     </section>
     <section class="main-advantages-section">
